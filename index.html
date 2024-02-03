@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TYPOGRAPHY -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Single+Day&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- TITLE -->
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <header>
+        <h1>Rock, paper, scissors</h1>
+        <p>con HTML, CSS y JavaScript</p>
+    </header>
+
+    <main>
+        <p id="instructions" class="instructions">
+            The first to get 5 points is the winner!
+        </p>
+        <div class="marker">
+            <p class="name player-name">Player</p>
+            <p class="name computer-name">Computer</p>
+            <p class="points">
+                <span id="user-points">0</span>
+                <span>-</span>
+                <span id="computer-points">0</span>
+            </p>
+        </div>
+        <div class="choose-element" id="chooseElement">
+            <h2>Choose the element you want for your next turn</h2>
+            <div class="elements">
+                <button class="element" id="rock🪨">🪨</button>
+                <button class="element" id="paper📋">📋</button>
+                <button class="element" id="scissors✂️">✂️</button>
+            </div>
+        </div>
+        <div class="message disabled" id="message">
+            <p>
+                You used <span class="election" id="userElection">paper📋</span><br>
+                and the computer used <span class="election" id="computerElection">rock🪨</span>
+            </p>
+            <p id="winsPoint">You won a point! 🔥</p>
+        </div>
+        <button class="btn disabled" id="restart">Restart game</button>
+    </main>
+    
+    <script src="./js/index.js"></script>
+</body>
+</html>
