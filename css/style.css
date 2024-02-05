@@ -4,3 +4,121 @@
     box-sizing: border-box;
     font-family: "Inconsolata";
 }
+
+body{
+    background-color: #08BDBD;
+    color: black;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    background-color: #ff9914;
+    color: #f21b3f;
+    border-bottom-left-radius: 48px;
+    border-bottom-right-radius: 48px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+    text-align: center;
+}
+
+.instructions{
+    margin-bottom: 32px;
+}
+
+.marker{
+    background-color: #abff4f;
+    padding: 16px 32px;
+    border-radius: 16px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: f21b3f;
+    font-weight: 600;
+    margin-bottom: 32px;
+}
+
+.marker .name{
+    position: absolute;
+    color: #f21b3f;
+    background-color: #abff4f;
+    line-height: 16px;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: 2px solid pink;
+}
+
+.marker .player-name{
+    right: 85%;
+}
+
+.marker .computer-name{
+    left: 85%;
+}
+
+.marker .points{
+    font-size: 1.6rem;
+}
+
+.choose-element{
+    margin-bottom: 2rem;
+}
+
+.choose-element h2{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: .5rem;
+}
+
+.elements{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.element{
+    font-size: 2rem;
+    background-color: pink;
+    border: 0;
+    padding: .5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.message{
+    margin-bottom: 2rem;
+    line-height: 1.8; 
+}
+
+.message .election {
+    color: black;
+    background-color: #fc3398;
+    border-radius: .25rem;
+    padding-inline: .25rem;
+}
+
+.btn {
+    border: 0;
+    line-height: 1;
+    background-color: #d445d4;
+    color: #fc3398;
+    font-size: 1rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.disabled {
+    display: none;
+}
